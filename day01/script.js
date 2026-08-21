@@ -20,3 +20,7 @@ const genre = "SF";
 const category = "영화";
 
 console.log(genre + " " + category);
+
+console.log("영화 제목: " + title);
+console.log("평점: " + voteAverage);
+console.log("개봉일: " + releaseDate);
