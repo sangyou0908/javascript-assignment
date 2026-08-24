@@ -16,3 +16,7 @@ if (movie.voteAverage >= 8) {
 } else {
   console.log("일반 영화");
 }
+
+if (movie.voteAverage >= 8 && movie.voteCount >= 30000) {
+  console.log("일반 영화");
+}
