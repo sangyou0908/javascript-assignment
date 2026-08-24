@@ -51,3 +51,15 @@ console.log(movies[0].title);
 console.log(movies[1].voteAverage);
 console.log(movies[2].releaseDate);
 console.log(movies.length);
+
+movie.voteAverage = 8.5;
+console.log(movie.voteAverage);
+
+movies.push({
+  id: 4,
+  title: "다크 나이트",
+  voteAverage: 9.0,
+  releaseDate: "2008-07-16",
+});
+
+console.log(movies.length);
