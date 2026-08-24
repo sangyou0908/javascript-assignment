@@ -6,3 +6,13 @@ const movie = {
   releaseDate: "2010-07-15",
   isFavorite: false,
 };
+
+console.log(movie.title);
+console.log(movie.voteAverage);
+console.log(movie.isFavorite);
+
+if (movie.voteAverage >= 8) {
+  console.log("추천 영화");
+} else {
+  console.log("일반 영화");
+}
