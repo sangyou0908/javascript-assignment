@@ -18,5 +18,7 @@ if (movie.voteAverage >= 8) {
 }
 
 if (movie.voteAverage >= 8 && movie.voteCount >= 30000) {
+  console.log("인기 추천 영화");
+} else {
   console.log("일반 영화");
 }
