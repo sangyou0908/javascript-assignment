@@ -25,3 +25,24 @@ if (movie.voteAverage >= 8 && movie.voteCount >= 30000) {
 
 const favoriteButtonText = movie.isFavorite ? "찜 해제" : "찜하기";
 console.log(favoriteButtonText);
+
+const movies = [
+  {
+    id: 1,
+    title: "인셉션",
+    voteAverage: 8.4,
+    releaseDate: "2010-07-15",
+  },
+  {
+    id: 2,
+    title: "인터스텔라",
+    voteAverage: 8.7,
+    releaseDate: "2014-11-05",
+  },
+  {
+    id: 3,
+    title: "테넷",
+    voteAverage: 7.3,
+    releaseDate: "2020-08-26",
+  },
+];
