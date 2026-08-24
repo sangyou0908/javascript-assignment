@@ -46,3 +46,8 @@ const movies = [
     releaseDate: "2020-08-26",
   },
 ];
+
+console.log(movies[0].title);
+console.log(movies[1].voteAverage);
+console.log(movies[2].releaseDate);
+console.log(movies.length);
