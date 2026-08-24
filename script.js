@@ -22,3 +22,6 @@ if (movie.voteAverage >= 8 && movie.voteCount >= 30000) {
 } else {
   console.log("일반 영화");
 }
+
+const favoriteButtonText = movie.isFavorite ? "찜 해제" : "찜하기";
+console.log(favoriteButtonText);
