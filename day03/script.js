@@ -1,8 +1,6 @@
 const getMovieMessage = (title, voteAverage) => {
-  console.log(`${title}의 평점은 ${voteAverage}점입니다.`);
+  return `${title}의 평점은 ${voteAverage}점입니다.`;
 };
-
-getMovieMessage("인셉션", 8.4);
 
 const title = document.querySelector(".title");
 console.log(title.textContent);
@@ -11,3 +9,10 @@ console.log(title.textContent);
 
 const description = document.querySelector(".description");
 description.classList.add("text-primary", "fw-bold");
+
+const movieList = document.querySelector("#movie-list");
+const movieMessageCard = document.createElement("div");
+
+movieMessageCard.textContent = getMovieMessage("인셉션", 8.4);
+
+movieList.append(movieMessageCard);
