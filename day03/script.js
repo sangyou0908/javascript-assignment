@@ -8,3 +8,6 @@ const title = document.querySelector(".title");
 console.log(title.textContent);
 title.textContent = "오늘의 추천 영화";
 console.log(title.textContent);
+
+const description = document.querySelector(".description");
+description.classList.add("text-primary", "fw-bold");
