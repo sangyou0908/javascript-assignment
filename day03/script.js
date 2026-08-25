@@ -21,3 +21,5 @@ const movieMessageCard2 = document.createElement("div");
 movieMessageCard2.textContent = getMovieMessage("인터스텔라", 8.7);
 movieMessageCard2.classList.add("border", "rounded", "p-3", "mb-2");
 movieList.append(movieMessageCard2);
+
+// movieMessageCard2.remove();
