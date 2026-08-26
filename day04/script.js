@@ -55,3 +55,16 @@ movies.forEach((movie) => {
   // movie의 title과 voteAverage 사용
   console.log(`${movie.title}의 평점은 ${movie.voteAverage}입니다.`);
 });
+
+// 영화 목록 요소 선택하기
+const movieList = document.querySelector("#movie-list");
+
+// 화면에 영화 목록 노출
+movies.forEach((movie) => {
+  // 영화 목록 li 추가하기
+  const movieListItem = document.createElement("li");
+
+  // 영화 목록 노출
+  movieListItem.textContent = `${movie.title}`;
+  movieList.append(movieListItem);
+});
