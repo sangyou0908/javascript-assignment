@@ -18,10 +18,15 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // 입력값 가져오기
-  const value = input.value;
+  const keyword = input.value.trim();
+
+  // 빈 값 입력 시 조건 추가
+  if (keyword === "") {
+    return;
+  }
 
   // 새 요소 생성 및 입력값 노출
   const resultMessage = document.createElement("p");
-  resultMessage.textContent = `검색한 영화: ${value}`;
+  resultMessage.textContent = `검색한 영화: ${keyword}`;
   searchResult.append(resultMessage);
 });
