@@ -29,4 +29,7 @@ form.addEventListener("submit", (event) => {
   const resultMessage = document.createElement("p");
   resultMessage.textContent = `검색한 영화: ${keyword}`;
   searchResult.append(resultMessage);
+
+  // submit 후 input에 입력값 제거
+  input.value = "";
 });
