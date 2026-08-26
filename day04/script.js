@@ -33,3 +33,25 @@ form.addEventListener("submit", (event) => {
   // submit 후 input에 입력값 제거
   input.value = "";
 });
+
+// movies 배열 추가
+const movies = [
+  {
+    title: "인셉션",
+    voteAverage: 8.4,
+  },
+  {
+    title: "인터스텔라",
+    voteAverage: 8.7,
+  },
+  {
+    title: "다크 나이트",
+    voteAverage: 9.0,
+  },
+];
+
+// forEach()로 영화 목록 출력
+movies.forEach((movie) => {
+  // movie의 title과 voteAverage 사용
+  console.log(`${movie.title}의 평점은 ${movie.voteAverage}입니다.`);
+});
