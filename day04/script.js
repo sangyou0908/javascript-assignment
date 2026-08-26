@@ -3,7 +3,7 @@ const button = document.querySelector("#recommend-button");
 const recommendResult = document.querySelector("#recommend-result");
 
 // 버튼 클릭 이벤트
-button.addEventListener("click", (event) => {
+button.addEventListener("click", () => {
   recommendResult.textContent = "오늘의 추천 영화는 인셉션입니다.";
 });
 
