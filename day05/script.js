@@ -46,8 +46,7 @@ form.addEventListener("submit", (event) => {
 
   // 빈값 검증 -> 가공 -> 검색결과 출력
   if (value !== "") {
-    value.textContent = value;
     const lowerTitle = value.toLowerCase();
-    searchResult.append(lowerTitle);
+    searchResult.textContent = lowerTitle;
   }
 });
