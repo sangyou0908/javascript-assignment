@@ -16,3 +16,7 @@ const movies = [
     voteAverage: 7.3,
   },
 ];
+
+// 영화 데이터를 찾아서 console창에 출력
+const foundMovie = movies.find((movie) => movie.title === "인터스텔라");
+console.log(foundMovie);
