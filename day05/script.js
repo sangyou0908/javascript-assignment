@@ -24,3 +24,7 @@ console.log(foundMovie);
 // 평점 8.5점 이상인 영화 배열 노출
 const highRatedMovies = movies.filter((movie) => movie.voteAverage >= 8.5);
 console.log(highRatedMovies);
+
+// 영화 배열에서 title만 가져온 배열 노출
+const movieTitles = movies.map((movie) => movie.title);
+console.log(movieTitles);
