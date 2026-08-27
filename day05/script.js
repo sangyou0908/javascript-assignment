@@ -20,3 +20,7 @@ const movies = [
 // 영화 데이터를 찾아서 console창에 출력
 const foundMovie = movies.find((movie) => movie.title === "인터스텔라");
 console.log(foundMovie);
+
+// 평점 8.5점 이상인 영화 배열 노출
+const highRatedMovies = movies.filter((movie) => movie.voteAverage >= 8.5);
+console.log(highRatedMovies);
