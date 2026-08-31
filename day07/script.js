@@ -9,3 +9,8 @@ const movie = {
 };
 
 const genres = ["Drama", "Thriller", "Crime"];
+
+// 객체 구조 분해 할당하기
+const { title, vote_average } = movie;
+console.log(`제목: ${title}`);
+console.log(`평점: ${vote_average}`);
