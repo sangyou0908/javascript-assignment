@@ -27,3 +27,7 @@ console.log(secondGenre);
 // 존재하지 않는 속성 안전하게 가져오기
 const director = movie.detail?.diractor;
 console.log(director);
+
+// 기본값 사용하기
+const directorName = director?.directorName ?? "감독 정보 없음";
+console.log(directorName);
