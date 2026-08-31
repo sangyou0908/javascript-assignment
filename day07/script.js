@@ -18,3 +18,8 @@ console.log(`평점: ${vote_average}`);
 // movie 객체의 속성을 새로운 변수로 할당하기
 const { title: movieTitle } = movie;
 console.log(movieTitle);
+
+// genres 배열 구조 분해 할당하기
+const [firstGenre, secondGenre] = genres;
+console.log(firstGenre);
+console.log(secondGenre);
