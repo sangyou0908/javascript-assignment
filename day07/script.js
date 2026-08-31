@@ -14,3 +14,7 @@ const genres = ["Drama", "Thriller", "Crime"];
 const { title, vote_average } = movie;
 console.log(`제목: ${title}`);
 console.log(`평점: ${vote_average}`);
+
+// movie 객체의 속성을 새로운 변수로 할당하기
+const { title: movieTitle } = movie;
+console.log(movieTitle);
