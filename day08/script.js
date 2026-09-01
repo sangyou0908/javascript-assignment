@@ -16,6 +16,10 @@ async function getPopularMovies() {
   const response = await fetch(URL, options);
   const data = await response.json();
   console.log(data);
+
+  // Response의 데이터 사용 > 첫 번째 영화 가져오기
+  const firstMovie = data.results[0];
+  console.log(firstMovie.title);
 }
 
 getPopularMovies();
