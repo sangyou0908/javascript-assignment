@@ -14,5 +14,8 @@ const URL = "https://api.themoviedb.org/3/movie/popular?language=ko-KR&page=1";
 // fetch()로 서버에 Request 보내기
 async function getPopularMovies() {
   const response = await fetch(URL, options);
-  console.log(response); // Promise { <pending> }
+  const data = await response.json();
+  console.log(data);
 }
+
+getPopularMovies();
