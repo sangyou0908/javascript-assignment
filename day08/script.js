@@ -20,6 +20,11 @@ async function getPopularMovies() {
   // Response의 데이터 사용 > 첫 번째 영화 가져오기
   const firstMovie = data.results[0];
   console.log(firstMovie.title);
+
+  // 첫 번째 영화 데이터의 특정 속성을 가져와서 출력
+  const { title, vote_average } = firstMovie;
+  console.log(`제목: ${title}`);
+  console.log(`평점: ${vote_average}`);
 }
 
 getPopularMovies();
