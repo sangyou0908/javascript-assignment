@@ -5,7 +5,7 @@ const options = {
   },
 };
 
-const url = "https://api.themoviedb.org/3/movie/now_playing?language=ko-KR";
+const URL = "https://api.themoviedb.org/3/movie/popular?language=ko-KR&page=1";
 
 async function getNowPlaying() {}
 
