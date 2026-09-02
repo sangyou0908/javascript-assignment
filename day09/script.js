@@ -40,7 +40,11 @@ function createMovieCard(movie) {
 function renderMovies(movies) {
   // TODO 6. forEach()로 영화 목록을 반복하면서
   // createMovieCard()로 만든 카드를 container에 추가하세요.
+  movies.forEach((movie) => {
+    container.append(createMovieCard(movie));
+  });
 }
+renderMovies(movies);
 
 async function getTopRatedMovies() {
   // TODO 7. API 요청 전에 Loading 문구를 표시하세요.
