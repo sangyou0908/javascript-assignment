@@ -33,6 +33,8 @@ function createMovieCard(movie) {
   rating.textContent = `평점 ${vote_average}`;
 
   // TODO 5. 만든 요소를 card에 추가하고 card를 반환하세요.
+  card.append(poster, titleEl, rating);
+  return card;
 }
 
 function renderMovies(movies) {
