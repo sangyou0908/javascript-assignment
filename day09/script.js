@@ -62,8 +62,13 @@ async function getTopRatedMovies() {
   // TODO 8. Loading 문구를 지우세요.
   container.textContent = "";
 
-  // TODO 9. data.results를 renderMovies()에 전달하세요.
-  renderMovies(data.results);
+  // add) 평점 8점 이상인 영화만 필터링하는 변수 선언
+  const filteredMovies = data.results.filter((movie) => {
+    return movie.vote_average >= 8;
+  });
+
+  // TODO 9. filteredMovies를 renderMovies()에 전달하세요.
+  renderMovies(filteredMovies);
 }
 
 getTopRatedMovies();
