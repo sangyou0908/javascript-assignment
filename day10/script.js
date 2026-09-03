@@ -41,6 +41,7 @@ function renderMovies(movies) {
 
 async function getPopularMovies() {
   // TODO 1. Loading 상태를 표시하세요.
+  container.textContent = "영화 목록을 불러오는 중... 잠시만 기다려 주세요.";
 
   // TODO 2. try / catch 구조를 작성하세요.
   try {
@@ -58,7 +59,10 @@ async function getPopularMovies() {
     const data = await response.json();
 
     // TODO 6. Loading 문구를 지우세요.
+    container.textContent = "";
+
     // TODO 7. data.results를 renderMovies()에 전달하세요.
+    renderMovies(data.results);
   } catch (error) {
     // TODO 8. 사용자에게 오류 안내 문구를 표시하세요.
     container.textContent = "영화 정보를 불러오지 못했습니다.";
