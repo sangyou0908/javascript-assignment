@@ -46,13 +46,23 @@ async function getPopularMovies() {
   try {
     // TODO 3. fetch()와 await를 사용해 Response를 받으세요.
     const response = await fetch(URL, options);
+    console.log(response);
+
     // TODO 4. response.ok가 false라면 오류 안내 문구를 표시하고 return으로 함수를 종료하세요.
+    if (!response.ok) {
+      container.textContent = "영화 정보를 불러오지 못했습니다.";
+      return;
+    }
+
     // TODO 5. response.json()으로 데이터를 변환하세요.
     // TODO 6. Loading 문구를 지우세요.
     // TODO 7. data.results를 renderMovies()에 전달하세요.
   } catch (error) {
     // TODO 8. 사용자에게 오류 안내 문구를 표시하세요.
+    container.textContent = "영화 정보를 불러오지 못했습니다.";
+
     // TODO 9. console.error(error)로 실제 오류를 출력하세요.
+    console.error(error);
   }
 }
 
