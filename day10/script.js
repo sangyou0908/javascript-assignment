@@ -45,6 +45,7 @@ async function getPopularMovies() {
   // TODO 2. try / catch 구조를 작성하세요.
   try {
     // TODO 3. fetch()와 await를 사용해 Response를 받으세요.
+    const response = await fetch(URL, options);
     // TODO 4. response.ok가 false라면 오류 안내 문구를 표시하고 return으로 함수를 종료하세요.
     // TODO 5. response.json()으로 데이터를 변환하세요.
     // TODO 6. Loading 문구를 지우세요.
