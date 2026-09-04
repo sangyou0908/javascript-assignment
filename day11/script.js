@@ -107,8 +107,17 @@ async function searchTVShows(keyword) {
     }
 
     // TODO 3.
+    const data = await response.json();
+    console.log(data.results);
+
     // TODO 4.
+    container.textContent = "";
+
     // TODO 5.
+    if (data.results.length === 0) {
+      container.textContent = "검색 결과가 없습니다.";
+      return;
+    }
 
     // TODO 심화 01.
 
