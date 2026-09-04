@@ -119,6 +119,8 @@ async function searchTVShows(keyword) {
       return;
     }
 
+    renderTVShows(data.results);
+
     // TODO 심화 01.
 
     // TODO 6.
