@@ -162,5 +162,10 @@ async function getNowPlayingMovies() {
 renderKeywords();
 
 // TODO 심화 02. 최근 검색어 전체 삭제하기
+clearButton.addEventListener("click", (event) => {
+  keywords = [];
+  localStorage.setItem("keywords", JSON.stringify(keywords));
+  renderKeywords();
+});
 
 getNowPlayingMovies();
