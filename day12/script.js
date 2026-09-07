@@ -112,9 +112,7 @@ async function searchMovies(keyword) {
     const data = await response.json();
 
     // TODO 04. 같은 검색어가 있다면 기존 위치에서 제거하기
-    keywords = keywords.filter((itemKeyword) => {
-      itemKeyword !== keyword;
-    });
+    keywords = keywords.filter((itemKeyword) => itemKeyword !== keyword);
 
     // TODO 05. 최신 검색어를 배열 맨 앞에 추가하기
     keywords.unshift(keyword);
@@ -154,6 +152,7 @@ async function getNowPlayingMovies() {
 }
 
 // TODO 08. 새로고침 후에도 최근 검색어 표시하기
+renderKeywords();
 
 // TODO 심화 02. 최근 검색어 전체 삭제하기
 
