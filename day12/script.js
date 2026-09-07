@@ -112,7 +112,7 @@ async function searchMovies(keyword) {
     const data = await response.json();
 
     // TODO 04. 같은 검색어가 있다면 기존 위치에서 제거하기
-    keywords = keywords.fiter((itemKeyword) => {
+    keywords = keywords.filter((itemKeyword) => {
       itemKeyword !== keyword;
     });
 
