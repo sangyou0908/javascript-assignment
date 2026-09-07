@@ -30,6 +30,10 @@ function renderKeywords() {
     keywordButton.textContent = keyword;
 
     // TODO 심화 01. 최근 검색어를 클릭하여 다시 검색하기
+    keywordButton.addEventListener("click", (event) => {
+      input.value = keyword;
+      searchMovies(keyword);
+    });
 
     const removeButton = document.createElement("button");
 
